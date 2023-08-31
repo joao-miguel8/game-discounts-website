@@ -1,11 +1,11 @@
 import './App.css'
-import MobileNav from '@/features/mobile-nav/components/MobileNav'
+import Home from '@/routes/Home'
 
 function App() {
 
   return (
   <>
-    <MobileNav />
+    <Home />
   </>
   )
 }
