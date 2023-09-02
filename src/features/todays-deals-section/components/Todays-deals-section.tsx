@@ -15,7 +15,7 @@ const [dataFetched, setDataFetched] = useState<Array<popularCardData>>([]);
 
 
 // axios fetch our cards on page load with custom hook
-const {data, loading, error} = useAxiosFetch(`https://corsproxy.io/?https://www.gamerpower.com/api/giveaways?sort-by=popularity
+const {data, loading, error} = useAxiosFetch(`https://www.gamerpower.com/api/giveaways?sort-by=popularity
 `)
 useEffect(() => {
     if (data) {
@@ -30,8 +30,8 @@ useEffect(() => {
 
 return (
   <section>
-    <h3 className="text-24 font-bold">Trending Deals</h3>
-      <div className='overflow-x-scroll flex w-screen'>
+    <h3 className='text-24 font-bold'>Trending Deals</h3>
+      <div className='overflow-x-scroll flex'>
         {/* slider */}
         <div className='py-6 px-2 flex gap-4 overscroll-contain'>
         {/* card */}
