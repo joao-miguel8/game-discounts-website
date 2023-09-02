@@ -1,9 +1,9 @@
 import MobileNav from "@/features/mobile-nav/components/MobileNav";
-
+import TodaysDealSection from '@/features/todays-deals-section/components/Todays-deals-section'
 const Home = () => {
   return (
     <>
-    <h2>HOME</h2>
+    <TodaysDealSection />
       <MobileNav />
     </>
   )
