@@ -1,4 +1,4 @@
-import MobileNav from "@/features/mobile-nav/components/MobileNav";
+import MobileNav from "@/components/MobileNav";
 const Favorites = () => {
   return (
     <>

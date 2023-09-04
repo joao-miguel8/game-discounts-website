@@ -38,7 +38,6 @@ const PCGiveawayBanners = () => {
     <div className='mt-6 mx-auto w-5/6 grid grid-cols-1 grid-rows-3 md:grid-cols-4 gap-1' >
     {dataFetch.map((giveaway, i) => {
       const gridCellBreakpoints = [300, 600, 600];
-
       // check if i value is less than gridCellBreakpoints.length if is update i to highest valid index
       const gridItemIndex = i < gridCellBreakpoints.length ? i : gridCellBreakpoints.length - 1;
 
@@ -57,6 +56,7 @@ const PCGiveawayBanners = () => {
       const container3Styling = isContainer4 ? 'col-span-3 col-start-3 row-span-2' : '';
 
   return (
+
     <div key={i} className={`relative max-w-[${gridCellBreakpoints[gridItemIndex]}px] ${hideOnSm} ${container2Styling} ${container3Styling} ${container1Styling}`}>
           <div className='h-full' >
           <img src={giveaway.image} alt=""  className={classnames( 'rounded', isContainer1 ? 'w-full h-full' : '', isContainer3 ? 'h-full w-full' : "", isContainer4 ? 'w-full h-full' : '')} />

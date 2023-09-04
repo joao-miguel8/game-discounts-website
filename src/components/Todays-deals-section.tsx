@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import FavoritesBtn from '@/features/favoritesBtn/FavoritesBtn'
+import FavoritesBtn from '@/common/FavoritesBtn'
 import useAxiosFetch from '@/hooks/useAxiosFetch';
 
 const TodaysDealSection = () => {
